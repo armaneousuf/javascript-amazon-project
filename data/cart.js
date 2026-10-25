@@ -32,6 +32,14 @@ export function addToCart(productId) {
   saveToStorage();
 }
 
+export function updateDeliveryOption(productId, deliveryOptionId) {
+   const existingItem = cart.find((item) => item.productId === productId);
+   if(!existingItem) return;
+
+   existingItem.deliveryOptionId = deliveryOptionId;
+   saveToStorage()
+}
+
 export function removeFromCart(productId) {
   cart = cart.filter((item) => item.productId !== productId);
   saveToStorage();
