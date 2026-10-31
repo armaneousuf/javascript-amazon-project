@@ -67,6 +67,12 @@
   display: flex;
 }
 
+.amazon-header-middle-section form {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
 .search-bar {
   flex: 1;
   width: 0;
@@ -143,7 +149,7 @@
   position: absolute;
   top: 4px;
   left: 22px;
-  
+
   width: 26px;
   text-align: center;
 }
